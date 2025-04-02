@@ -1,6 +1,6 @@
 import { assert } from "chai";
 import { describe, it } from "mocha";
-import  fibonacci  from "fibonacci.js";
+import fibonacci from './fibonacci.js';
 
 
 describe('fibonacci', ()=> {
