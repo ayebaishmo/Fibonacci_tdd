@@ -21,4 +21,10 @@ describe('fibonacci', ()=> {
             () => fibonacci("dsd"),
             TypeError, 'Input must be a number');
     });
+
+    it("Should throw a value error for string input", () => {
+        assert.throws(
+            () => fibonacci(-4),
+            ValueError, 'Input must be a positive number');
+    });
 });
