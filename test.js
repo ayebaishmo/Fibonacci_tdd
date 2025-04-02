@@ -22,9 +22,9 @@ describe('fibonacci', ()=> {
             TypeError, 'Input must be a number');
     });
 
-    it("Should throw a value error for string input", () => {
+    it("Should throw a value error for negative input", () => {
         assert.throws(
             () => fibonacci(-4),
-            Error, 'Input must be a positive number');
+            Error, 'Input must be a 0 or a positive number');
     });
 });
