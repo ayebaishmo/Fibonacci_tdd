@@ -11,4 +11,8 @@ describe('fibonacci', ()=> {
     it("Should return 1 for fibonacci(1)",()=> {
         assert.strictEqual(fibonacci(1),1);
     });
+
+    it("Should return 1 for fibonacci(2)",()=> {
+        assert.strictEqual(fibonacci(2),1);
+    });
 });
