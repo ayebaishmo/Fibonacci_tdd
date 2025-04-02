@@ -27,4 +27,10 @@ describe('fibonacci', ()=> {
             () => fibonacci(-4),
             Error, 'Input must be a 0 or a positive number');
     });
+
+    it("Should throw an error for floating point", () => {
+        assert.throws(
+            () => fibonacci(47.9),
+            Error, 'Input should be an positive interger');
+    });
 });
