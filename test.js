@@ -25,6 +25,6 @@ describe('fibonacci', ()=> {
     it("Should throw a value error for string input", () => {
         assert.throws(
             () => fibonacci(-4),
-            ValueError, 'Input must be a positive number');
+            Error, 'Input must be a positive number');
     });
 });
