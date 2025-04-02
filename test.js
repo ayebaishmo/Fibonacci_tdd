@@ -31,6 +31,6 @@ describe('fibonacci', ()=> {
     it("Should throw an error for floating point", () => {
         assert.throws(
             () => fibonacci(47.9),
-            Error, 'Input should be an positive interger');
+            Error, 'Input should be a positive interger');
     });
 });
